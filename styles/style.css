@@ -24,9 +24,13 @@ main .description {
 }
 main .description h1 {
   color: #1F4284;
+  font-size: 30px;
 }
 main .description p {
   color: #727272;
+  font-size: 17px;
+  line-height: 27.2px;
+  font-weight: 400;
 }
 main .description .try-btn {
   display: flex;
