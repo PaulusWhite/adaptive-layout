@@ -1,4 +1,8 @@
 body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   margin: 36px 40px;
   background-color: #EBF0FA;
 }
@@ -18,13 +22,14 @@ main .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 18px;
   padding: 102px 320px 102px 72px;
 }
 main .description h1 {
   color: #1F4284;
   font-size: 30px;
+  font-weight: 500;
 }
 main .description p {
   color: #727272;
@@ -43,6 +48,7 @@ main .description .try-btn {
   color: #FFFFFF;
   background: #244C98;
   font-size: 18px;
+  font-weight: 500;
 }
 main .description .try-btn .icon-frame {
   display: flex;
