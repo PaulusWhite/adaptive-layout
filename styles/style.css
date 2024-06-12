@@ -62,6 +62,7 @@ main .description .description__block .try-btn {
   background: #244C98;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;
 }
 main .description .description__block .try-btn .icon-frame {
   flex-shrink: 0;
