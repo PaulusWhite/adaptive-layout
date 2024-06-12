@@ -4,7 +4,7 @@ body {
   font-weight: 400;
   font-style: normal;
   position: relative;
-  margin: 36px 40px;
+  padding: 36px 40px;
   min-height: 100vh;
 }
 
@@ -52,6 +52,7 @@ main .description .description__block p {
 }
 main .description .description__block .try-btn {
   display: flex;
+  align-items: center;
   max-width: 341px;
   width: 100%;
   margin-top: 18px;
@@ -183,7 +184,7 @@ main .img-frame {
 }
 @media (max-width: 1439px) {
   body {
-    margin: 24px;
+    padding: 24px;
   }
   main {
     flex-direction: column;
@@ -224,7 +225,7 @@ main .img-frame {
 }
 @media (max-width: 767px) {
   body {
-    margin: 14px 24px;
+    padding: 14px 24px;
   }
   main .description {
     height: 244px;
