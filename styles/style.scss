@@ -23,6 +23,7 @@ body{
   outline: none;
   border: none;
   margin: 0;
+  box-sizing: border-box;
 }
 
 main{
@@ -35,6 +36,7 @@ main{
   overflow: hidden;
 
   .description{
+    box-sizing: initial;
     padding: 102px 320px 102px 72px;
 
     .description__block{
@@ -61,7 +63,7 @@ main{
       .try-btn{
         display: flex;
         align-items: center;
-        gap: 48px;
+        // gap: 48px;
         width: 341px;
         margin-top: 18px;
         padding: 19.5px 12px 19.5px 24px;
@@ -72,11 +74,13 @@ main{
         font-weight: 500;
 
         .icon-frame{
+          flex-shrink: 0;
           display: flex;
           justify-content: center;
           align-items: center;
           width: 36px;
           height: 36px;
+          margin-left: auto;
           border-radius: 100%;
           background-color: $whiteColor;
         }
@@ -89,5 +93,100 @@ main{
     width: 910px;
     background: url("./../assets/img.png") center;
     background-size: cover;
+  }
+}
+
+//Adaptive
+
+@media (max-width: 1919px){
+  main{
+    gap: 24px;
+
+    .description{
+      padding: 105px 70px 105px 72px;
+    }
+  }
+}
+
+@media (max-width: 1439px){
+  body{
+    margin: 24px;
+  }
+
+  main{
+    flex-direction: column;
+    align-items: center;
+    width: unset;
+    height: unset;
+
+    .description{
+      height: 202px;
+      padding: 24px 24px 0 24px;
+
+      .description__block{
+        width: 100%;
+
+        h1{
+          font-size: 20px;
+        }
+
+        p{
+          font-size: 15px;
+          line-height: 24px;
+
+          br{
+            display: none;
+          }
+        }
+
+        .try-btn{
+          width: 261px;
+          height: 56px;
+          margin-top: 6px;
+          padding: 16px 10px 16px 18px;
+          font-size: 15px;
+          text-wrap: nowrap;
+        }
+      }
+    }
+
+    .img-frame{
+      width: 720px;
+      height: 360px;
+    }
+  }
+}
+
+@media (max-width: 767px){
+  body{
+    margin: 14px 24px;
+  }
+
+  main{
+    .description{
+      height: 244px;
+
+      .description__block{
+        gap: 14px;
+
+        h1{
+          margin-top: 4px;
+        }
+
+        p{
+          font-size: 13px;
+        }
+
+        .try-btn{
+          width: 279px;
+        }
+      }
+    }
+
+    .img-frame{
+      max-width: 329px;
+      width: 100%;
+      height: 220px;
+    }
   }
 }
