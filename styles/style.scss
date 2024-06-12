@@ -45,42 +45,49 @@ main{
       width: 538px;
       gap: 18px;
 
-    h1{
-      color: $mainTextColor;
-      font-size: 30px;
-      font-weight: 500;
-    }
-    
-    p{
-      color: $textColor2;
-      font-size: 17px;
-      line-height: 27.2px;
-      font-weight: 400;
-    }
-
-    .try-btn{
-      display: flex;
-      align-items: center;
-      gap: 48px;
-      width: 341px;
-      margin-top: 18px;
-      padding: 19.5px 12px 19.5px 24px;
-      border-radius: 60px;
-      color: $whiteColor;
-      background: $btnBgColor;
-      font-size: 18px;
-      font-weight: 500;
-
-      .icon-frame{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 36px;
-        height: 36px;
-        border-radius: 100%;
-        background-color: $whiteColor;
+      h1{
+        color: $mainTextColor;
+        font-size: 30px;
+        font-weight: 500;
       }
+      
+      p{
+        color: $textColor2;
+        font-size: 17px;
+        line-height: 27.2px;
+        font-weight: 400;
+      }
+
+      .try-btn{
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        width: 341px;
+        margin-top: 18px;
+        padding: 19.5px 12px 19.5px 24px;
+        border-radius: 60px;
+        color: $whiteColor;
+        background: $btnBgColor;
+        font-size: 18px;
+        font-weight: 500;
+
+        .icon-frame{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 36px;
+          height: 36px;
+          border-radius: 100%;
+          background-color: $whiteColor;
+        }
+      }
+    
     }
-    }
+  }
+
+  .img-frame{
+    width: 910px;
+    background: url("./../assets/img.png") center;
+    background-size: cover;
   }
 }

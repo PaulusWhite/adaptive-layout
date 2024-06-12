@@ -65,4 +65,9 @@ main .description .description__block .try-btn .icon-frame {
   height: 36px;
   border-radius: 100%;
   background-color: #FFFFFF;
+}
+main .img-frame {
+  width: 910px;
+  background: url("./../assets/img.png") center;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
