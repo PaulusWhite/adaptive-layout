@@ -1,0 +1,63 @@
+$bgColor: #EBF0FA;
+$btnBgColor: #244C98;
+$mainTextColor: #1F4284;
+$textColor: #323232;
+$textColor2: #727272;
+$whiteColor: #FFFFFF;
+
+body{
+  margin: 36px 40px;
+  background-color: $bgColor;
+}
+
+*{
+  padding: 0;
+  outline: none;
+  border: none;
+  margin: 0;
+}
+
+main{
+  display: flex;
+  height: 455px;
+
+  .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 102px 320px 102px 72px;
+
+    h1{
+      color: $mainTextColor;
+    }
+    
+    p{
+      color: $textColor2;
+    }
+
+    .try-btn{
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      width: 341px;
+      margin-top: 18px;
+      padding: 19.5px 12px 19.5px 24px;
+      border-radius: 60px;
+      color: $whiteColor;
+      background: $btnBgColor;
+      font-size: 18px;
+
+      .icon-frame{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background-color: $whiteColor;
+      }
+    }
+  }
+}
