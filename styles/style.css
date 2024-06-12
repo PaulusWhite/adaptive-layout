@@ -4,7 +4,6 @@ body {
   font-weight: 400;
   font-style: normal;
   margin: 36px 40px;
-  background-color: #EBF0FA;
 }
 
 * {
@@ -16,28 +15,36 @@ body {
 
 main {
   display: flex;
+  justify-content: center;
   height: 455px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #EBF0FA;
+  overflow: hidden;
 }
 main .description {
+  padding: 102px 320px 102px 72px;
+}
+main .description .description__block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 538px;
   gap: 18px;
-  padding: 102px 320px 102px 72px;
 }
-main .description h1 {
+main .description .description__block h1 {
   color: #1F4284;
   font-size: 30px;
   font-weight: 500;
 }
-main .description p {
+main .description .description__block p {
   color: #727272;
   font-size: 17px;
   line-height: 27.2px;
   font-weight: 400;
 }
-main .description .try-btn {
+main .description .description__block .try-btn {
   display: flex;
   align-items: center;
   gap: 48px;
@@ -50,7 +57,7 @@ main .description .try-btn {
   font-size: 18px;
   font-weight: 500;
 }
-main .description .try-btn .icon-frame {
+main .description .description__block .try-btn .icon-frame {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -16,7 +16,6 @@ body{
   @include font;
 
   margin: 36px 40px;
-  background-color: $bgColor;
 }
 
 *{
@@ -28,15 +27,23 @@ body{
 
 main{
   display: flex;
+  justify-content: center;
   height: 455px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: $bgColor;
+  overflow: hidden;
 
   .description{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 18px;
     padding: 102px 320px 102px 72px;
+
+    .description__block{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 538px;
+      gap: 18px;
 
     h1{
       color: $mainTextColor;
@@ -73,6 +80,7 @@ main{
         border-radius: 100%;
         background-color: $whiteColor;
       }
+    }
     }
   }
 }
