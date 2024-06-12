@@ -1,5 +1,6 @@
 $bgColor: #EBF0FA;
 $btnBgColor: #244C98;
+$inputBgColor: #D7E2F6;
 $mainTextColor: #1F4284;
 $textColor: #323232;
 $textColor2: #727272;
@@ -14,8 +15,9 @@ $whiteColor: #FFFFFF;
 
 body{
   @include font;
-
+  position: relative;
   margin: 36px 40px;
+  min-height: 100vh;
 }
 
 *{
@@ -24,6 +26,7 @@ body{
   border: none;
   margin: 0;
   box-sizing: border-box;
+  background: none;
 }
 
 main{
@@ -94,6 +97,111 @@ main{
     width: 100%;
     background: url("./../assets/img.png") center;
     background-size: cover;
+  }
+}
+
+//Components
+.modal{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  padding: 24px;
+  background-color: $bgColor;
+
+  .modal__options{
+    text-align: right;
+
+    .modal__options__close-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 52px;
+      height: 52px;
+      margin-left: auto;
+      border-radius: 10px;
+      background: $whiteColor;
+      cursor: pointer;
+    }
+  }
+}
+
+//Signin Form
+.signIn-form{
+  display: flex;
+  flex-direction: column;
+
+  h2{
+    margin-bottom: 18px;
+    font-size: 24px;
+    font-weight: 500;
+    color: $textColor;
+  }
+
+  #email{
+    margin-bottom: 4px;
+  }
+
+  input{
+    padding: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: $mainTextColor;
+    border-radius: 10px;
+    background-color: $inputBgColor;
+
+    &::placeholder{
+      color: $mainTextColor ;
+    }
+  }
+
+  .signIn-form__remember-field{
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+
+    #pass-remember{
+      width: 24px;
+      height: 24px;
+    }
+
+    label{
+      margin-left: 14px;
+      font-size: 18px;
+    }
+  }
+
+  .signIn-form__restore-btn{
+    align-self: baseline;
+    margin-bottom: 36px;
+    font-size: 20px;
+    color: $mainTextColor;
+    cursor: pointer;
+  }
+
+  .signIn-form__signIn-btn,
+  .signIn-form__signUp-btn{
+    width: 100%;
+    padding: 18px 0;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .signIn-form__signIn-btn{
+    margin-bottom: 4px;
+    color: $whiteColor;
+    background-color: $btnBgColor;
+  }
+  
+  .signIn-form__signUp-btn{
+    border: solid $btnBgColor 1px;
+    color: $btnBgColor;
   }
 }
 
